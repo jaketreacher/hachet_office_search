@@ -20,31 +20,31 @@ class BuildingController extends Controller
 
         $buildings = \DB::table('buildings');
 
-        if(request('name')) {
+        if( null !== request('name')) {
             $buildings = $buildings->where('name', 'like', '%'.request('name').'%');
         }
 
-        if(request('price-min')) {
+        if( null !== request('price-min')) {
             $buildings = $buildings->where('price', '>=', request('price-min'));
         }
 
-        if(request('price-max')) {
+        if( null !== request('price-max')) {
             $buildings = $buildings->where('price', '<=', request('price-max'));
         }
 
-        if(request('offices')) {
+        if( null !== request('offices')) {
             $buildings = $buildings->where('offices', '=', request('offices'));
         }
 
-        if(request('tables')) {
+        if( null !== request('tables')) {
             $buildings = $buildings->where('tables', '=', request('tables'));
         }
 
-        if(request('sqm-min')) {
+        if( null !== request('sqm-min')) {
             $buildings = $buildings->where('sqm', '>=', request('sqm-min'));
         }
 
-        if(request('sqm-max')) {
+        if( null !== request('sqm-max')) {
             $buildings = $buildings->where('sqm', '<=', request('sqm-max'));
         }
 
