@@ -6,6 +6,8 @@
 
     <title>Office Search</title>
     <link rel="stylesheet" href="css/app.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
 </head>
 <body>
     <main>
@@ -37,7 +39,7 @@
                 <input type="number" name="sqm-max" id="sqm">
             </div>
 
-            <div>
+            <div class="errors">
                 <ul>
                     <li>Error 1</li>
                     <li>Error 2</li>
@@ -50,27 +52,31 @@
         </form>
 
         <table>
-            <tr>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Offices</th>
-                <th>Tables</th>
-                <th>sqm</th>
-            </tr>
-            <tr>
-                <td>St Georges Terrace</td>
-                <td>1900</td>
-                <td>4</td>
-                <td>8</td>
-                <td>300</td>
-            </tr>
-            <tr>
-                <td>St Georges Terrace</td>
-                <td>1900</td>
-                <td>4</td>
-                <td>8</td>
-                <td>300</td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Offices</th>
+                    <th>Tables</th>
+                    <th>sqm</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>St Georges Terrace</td>
+                    <td>1900</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>St Georges Terrace</td>
+                    <td>1900</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>300</td>
+                </tr>
+            </tbody>
         </table>
     </main>
 </body>
