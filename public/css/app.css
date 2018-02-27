@@ -12,8 +12,13 @@ body {
  * Form Section
  ********************/
 form {
-    width: 500px;
+    width: 400px;
     margin: 20px auto;
+    background-color: #e9ecef;
+    color: #495057;
+    font-weight: bold;
+    border: 3px solid #dee2e6;
+    padding: 10px 20px;
 }
 
 /* Small margin between all section */
@@ -35,7 +40,7 @@ div.field label {
 
 /* Name field */
 div.field input[type=text] {
-    width: 300px;
+    width: 250px;
 }
 
 /* Number fields */
@@ -60,6 +65,7 @@ div.errors {
 /* Center button */
 div.submit {
     text-align: center;
+    margin-top: 15px;
 }
 /* Format button */
 div.submit button {
@@ -109,6 +115,7 @@ tbody tr:nth-of-type(2n) {
     background-color: rgba(0,0,0,.05);
 }
 
+/* Center notification displayed in the table */
 td[colspan="5"] {
     text-align: center;
 }
