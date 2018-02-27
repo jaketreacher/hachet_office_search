@@ -12,41 +12,37 @@
 <body>
     <main>
         <form method="POST">
-            <div>
+            <div class="field">
                 <label for="name">Name:</label>
                 <input type="text" name="name" id="name">
             </div>
 
-            <div>
+            <div class="field">
                 <label for="price">Price:</label>
                 <input type="number" name="price-min" id="price">
                 <input type="number" name="price-max" id="price">
             </div>
 
-            <div>
+            <div class="field">
                 <label for="offices">Offices:</label>
                 <input type="number" name="offices" id="offices">
             </div>
 
-            <div>
+            <div class="field">
                 <label for="tables">Tables:</label>
                 <input type="number" name="tables" id="tables">
             </div>
 
-            <div>
+            <div class="field">
                 <label for="sqm">sqm:</label>
                 <input type="number" name="sqm-min" id="sqm">
                 <input type="number" name="sqm-max" id="sqm">
             </div>
 
-            <div class="errors">
-                <ul>
-                    <li>Error 1</li>
-                    <li>Error 2</li>
-                </ul>
+            <div class="errors" style="display: none;">
             </div>
 
-            <div>
+            <div class="submit">
                 <button type="submit">Update</button>
             </div>
         </form>
@@ -63,18 +59,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>St Georges Terrace</td>
-                    <td>1900</td>
-                    <td>4</td>
-                    <td>8</td>
-                    <td>300</td>
-                </tr>
-                <tr>
-                    <td>St Georges Terrace</td>
-                    <td>1900</td>
-                    <td>4</td>
-                    <td>8</td>
-                    <td>300</td>
+                    <td colspan="5">Adjust the fields above to search.</td>
                 </tr>
             </tbody>
         </table>

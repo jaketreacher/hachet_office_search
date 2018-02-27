@@ -11,6 +11,7 @@ $(document).ready(function (){
 
         // Remove all current errors
         $("div.errors ul").remove();
+        $("div.errors").hide();
         
         // Ignore empty values
         serializedData = $("form input")
@@ -50,7 +51,7 @@ function errorCallback(data) {
     data = data.responseJSON.errors;
     glob = data;
     console.log(data);
-    var row = "<tr><td colspan='5'>Error Occured</td></tr>";
+    var row = "<tr><td colspan='5'>An error has occured!</td></tr>";
     $("tbody").append(row);
 
     var html = "";
@@ -63,4 +64,5 @@ function errorCallback(data) {
 
     html = "<ul>"+html+"</ul>";
     $("div.errors").append(html);
+    $("div.errors").show();
 }
