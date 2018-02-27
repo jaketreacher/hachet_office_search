@@ -9,6 +9,60 @@ body {
 }
 
 /********************
+ * Overlay Section
+ ********************/
+ #overlay {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: rgba(1,1,1,0.8);
+ }
+
+ #overlay>div {
+     position: relative;
+     top: 30%;
+     left: 50%;
+     transform: translate(-50%, -30%);
+     color: white;
+     width: 500px;
+     text-align: center;
+ }
+
+.animation {
+    margin: 0 auto;
+    width: 150px;
+    text-align: center;
+}
+
+.animation div {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 100%;
+    display: inline-block;
+    animation: animate 1.5s infinite ease-in-out both;
+}
+
+.circle:nth-of-type(2) {
+    animation-delay: 0.1s;
+}
+.circle:nth-of-type(3) {
+    animation-delay: 0.2s;
+}
+
+@keyframes animate {
+    0%, 100% {
+        transform: scale(0);
+    } 50% {
+        transform: scale(1.0);
+    }
+}
+
+
+/********************
  * Form Section
  ********************/
 form {

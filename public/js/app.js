@@ -12,6 +12,7 @@ $(document).ready(function (){
         // Remove all current errors
         $("div.errors ul").remove();
         $("div.errors").hide();
+        $("#overlay").fadeIn(250);
         
         // Ignore empty values
         serializedData = $("form input")
@@ -24,7 +25,10 @@ $(document).ready(function (){
             url: "/api/buildings",
             data: serializedData,
             success: successCallback,
-            error: errorCallback
+            error: errorCallback,
+            complete: function () {
+                $("#overlay").fadeOut(250);
+            }
         });
     });
 });

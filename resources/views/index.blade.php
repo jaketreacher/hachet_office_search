@@ -10,6 +10,17 @@
     <script src="js/app.js"></script>
 </head>
 <body>
+    <div id="overlay" style="display: none;">
+        <div>
+            <h1>Searching</h1>
+            <div class="animation">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+
     <main>
         <form>
             <div class="field">
